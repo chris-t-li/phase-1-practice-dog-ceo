@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     // Challenge 2
-    function fetchURL(){
         fetch(breedUrl)
         .then(res => res.json())
         .then(data => {
@@ -33,9 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }   
             }
         })
-    }
 
-    fetchURL();
     // Challenge 3
     document.getElementById('dog-breeds').addEventListener('click', e => {
         e.target.style.color = 'red';
